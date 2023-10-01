@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e4e0ee;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.349);
+}
+
+.navbar {
+  height: 96px;
+  font-family: '"Akkurat Pro Bold","Arial Black", sans-serif';
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #4E2A84;
+}
+
+.nav-item {
+  font-size: 2.75vmin;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-weight: 500;
+  font-family: '"Akkurat Pro Bold","Arial Black", sans-serif';
+}
+
+.nav-item:hover {
+  font-size: 2.75vmin;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-weight: 600;
+  font-family: '"Akkurat Pro Bold","Arial Black", sans-serif';
+}
+
+.nav-link{
+  color: #fff;
+}
+
+.nav-link:hover{
+  color: #fff;
+}
+
+.navbar-brand{
+  color: #fff;
+  font-size: 3.5vmin;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-weight: 600;
+  font-family: '"Akkurat Pro Bold","Arial Black", sans-serif';
+}
+
+.navbar-brand:hover {
+  color: #fff;
+  font-size: 3.5vmin;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-weight: 600;
+  font-family: '"Akkurat Pro Bold","Arial Black", sans-serif';
+}
