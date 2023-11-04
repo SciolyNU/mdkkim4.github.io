@@ -53,7 +53,7 @@ function AboutUs() {
 				
 				As a team, we work year-round on initiatives aimed at achieving our vision: to provide students with unforgettable Science Olympiad 
 				experiences that cement their passions for lifelong learning. We can't wait to see you this coming February in 2024 for our third NUSO 
-				Invitational!
+				Invitational! *ADD IN MORE INFO NOW
 			</p> 
 			{/* <section style={{
 				width: '100vw', 
