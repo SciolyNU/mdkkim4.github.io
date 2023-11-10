@@ -35,6 +35,7 @@ function Navigation() {
                 <NavLink className="nav-link" to="/contact-us">
                   Contact Us
                 </NavLink>
+                {/* Add more below this */}
               </li>
             </ul>
           </div>
