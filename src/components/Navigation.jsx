@@ -7,13 +7,13 @@ function Navigation() {
     <div className="navigation">
       <nav className="navbar navbar-expand">
           <NavLink className="navbar-brand" to="/">
-            Northwestern University Science Olympiad
+            N
           </NavLink>
           <div>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <NavLink className="nav-link" to="/about-us">
-                  About Us
+                  About
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -33,7 +33,7 @@ function Navigation() {
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/contact-us">
-                  Contact Us
+                  Contact
                 </NavLink>
                 {/* Add more below this */}
               </li>

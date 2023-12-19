@@ -1,16 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Bitter', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e4e0ee;
+  background-color: #260841;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: 'Bitter', serif;
 }
 a {
   text-decoration: none;
@@ -22,30 +20,27 @@ a:hover {
 }
 
 .navbar {
-  height: 96px;
-  font-family: '"Akkurat Pro Bold","Arial Black", sans-serif';
-  padding-right: 20px;
-  padding-left: 20px;
-  margin: 0px;
+  height: 89px;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
   display: flex;
   justify-content: space-between;
-  background-color: #4E2A84;
+  background-color: #260841;
 }
 
 .nav-item {
-  font-size: 2.75vmin;
-  padding-right: 4px;
-  padding-left: 4px;
+  font-size: 2.5vmin;
+  padding-left: 6px;
   font-weight: 500;
-  font-family: '"Akkurat Pro Bold","Arial Black", sans-serif';
 }
 
 .nav-item:hover {
-  font-size: 2.75vmin;
-  padding-right: 4px;
-  padding-left: 4px;
+  font-size: 2.5vmin;
+  padding-left: 6px;
   font-weight: 600;
-  font-family: '"Akkurat Pro Bold","Arial Black", sans-serif';
 }
 
 .nav-link{
@@ -60,16 +55,36 @@ a:hover {
   color: #fff;
   font-size: 3.5vmin;
   padding-right: 4px;
-  padding-left: 4px;
   font-weight: 600;
-  font-family: '"Akkurat Pro Bold","Arial Black", sans-serif';
 }
 
 .navbar-brand:hover {
   color: #fff;
   font-size: 3.5vmin;
   padding-right: 4px;
-  padding-left: 4px;
   font-weight: 600;
-  font-family: '"Akkurat Pro Bold","Arial Black", sans-serif';
+}
+
+.first-section {
+  min-height: "100%";
+  display: "flex";
+  align-items: "center";
+  overflow: "hidden";
+  justify-content: "space-between";
+  max-width: "1200px";
+  margin: "0px auto";
+  flex-direction: "row";
+  padding-top: 69px;
+}
+
+h1 {
+  font-size: 9vmin;
+  font-weight: 600;
+  color: #fff;
+  margin: "0px";
+}
+
+p {
+  font-size: 3.75vmin;
+  color: #fff;
 }
