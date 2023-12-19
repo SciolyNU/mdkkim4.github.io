@@ -1,5 +1,7 @@
 import React from "react";
 import Arch from "./Arch.png";
+import Home1 from "./Home1.png";
+import Home2 from "./Home2.png";
 
 function Home() {
   return (
@@ -54,11 +56,11 @@ function Home() {
           </div>
           <div className="second-section">
             <img
-              src={Arch}
-              alt="Arch"
+              src={Home1}
+              alt="Home1"
               style={{ 
                 maxWidth: "100%",
-                height: "auto" 
+                height: "100%" 
               }}
             />
             <div style={{ width: "60%" }}>
