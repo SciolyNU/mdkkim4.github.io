@@ -7,6 +7,18 @@ body {
   background-color: #260841;
 }
 
+h1 {
+  font-size: 8.5vmin;
+  font-weight: 600;
+  color: #fff;
+  margin: "0px";
+}
+
+p {
+  font-size: 3.75vmin;
+  color: #fff;
+}
+
 code {
   font-family: 'Bitter', serif;
 }
@@ -66,25 +78,19 @@ a:hover {
 }
 
 .first-section {
-  min-height: "100%";
-  display: "flex";
-  align-items: "center";
-  overflow: "hidden";
-  justify-content: "space-between";
-  max-width: "1200px";
-  margin: "0px auto";
-  flex-direction: "row";
+  min-height: 75vh;
+  display: flex;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0px auto;
+  flex-direction: row;
   padding-top: 69px;
 }
 
-h1 {
-  font-size: 8.5vmin;
-  font-weight: 600;
-  color: #fff;
-  margin: "0px";
-}
-
-p {
-  font-size: 3.75vmin;
-  color: #fff;
+.second-section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 100px auto 0px;
+  flex-direction: row;
 }
