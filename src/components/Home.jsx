@@ -1,4 +1,5 @@
 import React from "react";
+import Arch from "./Arch.png";
 
 function Home() {
   return (
@@ -28,16 +29,28 @@ function Home() {
                 flexDirection: "column"
               }}
 						>
-              <h1>
-                Northwestern University<br></br>Science Olympiad
-              </h1>
-              <p
-                style={{
-                  marginTop: "30px",
-                }}
-              >
-                February 24th, 2024
-              </p>
+              <img
+                src={Arch}
+                alt="Arch"
+                style={{ 
+                  maxWidth: "100%",
+                  height: "auto", 
+                  position: "absolute",
+                  top: 49,
+                  right: 160 }}
+              />
+              <div style={{ zIndex: 1 }}>
+                <h1>
+                  Northwestern University<br></br>Science Olympiad
+                </h1>
+                <p
+                  style={{
+                    marginTop: "30px",
+                  }}
+                >
+                  February 24th, 2024
+                </p>
+              </div>
             </div>
           </div>
         </div>
