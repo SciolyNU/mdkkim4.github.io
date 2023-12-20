@@ -1,7 +1,8 @@
 import React from "react";
-import Arch from "./Arch.png";
+import Arch from "./Arch2.png";
 import Home1 from "./Home1.png";
 import Home2 from "./Home2.png";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -46,7 +47,7 @@ function Home() {
                 </h1>
                 <p
                   style={{
-                    marginTop: "30px",
+                    marginTop: "30px"
                   }}
                 >
                   February 24th, 2024
@@ -59,62 +60,96 @@ function Home() {
               src={Home1}
               alt="Home1"
               style={{ 
-                maxWidth: "100%",
-                height: "100%" 
+                maxWidth: "27.5%",
+                height: "27.5%" 
               }}
             />
             <div style={{ width: "60%" }}>
-              <div
-                style={{
-                  position: "relative",
-                  marginBottom: "36.5px"
-                }}
-              >
+              <div>
+                <p 
+                  style={{
+                    fontSize: "2.75vmin",
+                    marginBottom: "0.25rem"
+                  }}
+                >
+                  2024 INVITATIONAL
+                </p>
                 <h2
                   style={{
-                    fontSize: "64px",
-                    fontFamily: "Bitter, serif",
-                    fontWeight: "bold",
-                    color: "#1b4332",
-                    margin: "0px"
+                    marginBottom: "2rem"
                   }}
                 >
-                  About me<span style={{ color: "#52b788" }}>.</span>
+                  Learn More About Our Upcoming Invitational
                 </h2>
-                <div
-                  style={{
-                    width: "80px",
-                    height: "3.5px",
-                    backgroundColor: "#52b788",
-                    marginTop: "10px"
-                  }}
-                ></div>
-              </div>
-              <div
-                style={{
-                  margin: "0px auto",
-                  position: "relative"
-                }}
-              >
                 <p
                   style={{
-                    fontSize: "17px",
-                    marginTop: "0px",
-                    lineHeight: 1.65,
-                    color: "#1b4332",
-                    marginBottom: "25px"
+                    marginBottom: "2.5rem"
                   }}
                 >
-                  I’m a <b>third-year undergraduate student</b> at Northwestern University, pursuing a B.A. in Biology and Data Science 
-                  and an M.S. in Computer Science through a B.A./M.S. program.<br/><br/>
-                  While initially exploring investment banking and venture capital internships, I found myself far more passionate 
-                  about the transformative work of the startups I was actually advising and sourcing. Since then, I’ve been fortunate to build 
-                  software for a <b>multiomics research lab</b>, a <b>venture capital firm</b>, and a <b>startup</b>. I'm eager to continue 
-                  imparting meaningful impact, particularly at innovative and disruptive startups.<br/><br/>
-                  Currently, I’m leading a project at the <b>Proteomics Center of Excellence</b> to reverse engineer and improve Thermo Fisher Scientific’s mass 
-                  spectrometry software. On the side, I’ve been creating a multiomics quality control tool with <b>autoencoder neural network models</b>.<br/><br/>
-                  While I’m not coding, I enjoy playing tennis, learning new languages, spending time outdoors with friends, and reading books on human behavior. 
+                  View new announcements, updates, resources, and important tournament day information on our 2024 Invitational page!
                 </p>
+                <div className="button">
+                    INVITATIONAL INFORMATION
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="second-section">
+            <div style={{ width: "60%" }}>
+              <div>
+                <p 
+                  style={{
+                    fontSize: "2.75vmin",
+                    marginBottom: "0.25rem"
+                  }}
+                >
+                  GETTING INVOLVED
+                </p>
+                <h2
+                  style={{
+                    marginBottom: "2rem"
+                  }}
+                >
+                  Explore Getting Involved With NU Science Olympiad
+                </h2>
+                <p
+                  style={{
+                    marginBottom: "2.5rem"
+                  }}
+                >
+                  Join our growing community of undergraduate students, researchers, and faculty as we prepare for our upcoming invitational!
+                </p>
+                <div className="button">
+                    GET ACTIVE WITH NUSO
+                </div>
+              </div>
+            </div>
+            <img
+              src={Home2}
+              alt="Home2"
+              style={{ 
+                maxWidth: "27.5%",
+                height: "27.5%" 
+              }}
+            />
+          </div>
+          <div
+            style={{
+              margin: "100px auto"
+            }}
+          >
+            <div class="gradient-box">
+              <h2
+                style={{
+                  maxWidth: "70%",
+                  marginBottom: "2.5rem",
+                  textAlign: "center"
+                }}
+              >
+                Find Out More About Our Organization and Our Team
+              </h2>
+              <div className="button-black">
+                LEARN MORE ABOUT NUSO
               </div>
             </div>
           </div>
