@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import '../index.css';
+import Logo from "./Logo.png";
 
 function Navigation() {
   return (
     <div className="navigation">
-      <nav className="navbar navbar-expand">
+      <div 
+        style={{ 
+          marginLeft: "calc(max(10px, 100vw - 1280px))",
+          marginRight: "calc(max(10px, 100vw - 1280px))"
+        }}
+      >
+        <nav className="navbar navbar-expand">
           <NavLink className="navbar-brand" to="/">
-            N
+            <img
+              src={Logo}
+              alt="Logo"
+              style={{ 
+                maxWidth: "auto",
+                height: "59px"
+              }}
+            />
           </NavLink>
           <div>
             <ul className="navbar-nav ml-auto">
@@ -35,11 +49,11 @@ function Navigation() {
                 <NavLink className="nav-link" to="/contact-us">
                   Contact
                 </NavLink>
-                {/* Add more below this */}
               </li>
             </ul>
           </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   );
 }

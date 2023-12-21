@@ -9,7 +9,7 @@ function Home() {
     <div className="home">
       <div 
 				style={{
-					minWidth: "100vw",
+					maxWidth: "100vw",
 					minHeight: "100vh",
 					position: "relative",
 					overflow: "hidden"
@@ -17,11 +17,11 @@ function Home() {
 			>
         <div 
           style={{ 
-            marginLeft: "160px",
-            marginRight: "160px"
+            marginLeft: "calc(max(10px, 100vw - 1280px))",
+            marginRight: "calc(max(10px, 100vw - 1280px))"
           }}
         >
-          <div className="first-section">
+          <div className="first-section" style={{ flexDirection: "column" }}>
             <div
               style={{
                 minHeight: "25vh",
@@ -31,16 +31,6 @@ function Home() {
                 flexDirection: "column"
               }}
 						>
-              <img
-                src={Arch}
-                alt="Arch"
-                style={{ 
-                  maxWidth: "100%",
-                  height: "auto", 
-                  position: "absolute",
-                  top: 49,
-                  right: 160 }}
-              />
               <div style={{ zIndex: 1 }}>
                 <h1>
                   Northwestern University<br></br>Science Olympiad
@@ -54,6 +44,14 @@ function Home() {
                 </p>
               </div>
             </div>
+            <img
+              src={Arch}
+              alt="Arch"
+              style={{ 
+                maxWidth: "415px",
+                maxHeight: "448.7px"
+              }}
+            />
           </div>
           <div className="second-section">
             <img
@@ -133,24 +131,18 @@ function Home() {
               }}
             />
           </div>
-          <div
-            style={{
-              margin: "100px auto"
-            }}
-          >
-            <div class="gradient-box">
-              <h2
-                style={{
-                  maxWidth: "70%",
-                  marginBottom: "2.5rem",
-                  textAlign: "center"
-                }}
-              >
-                Find Out More About Our Organization and Our Team
-              </h2>
-              <div className="button-black">
-                LEARN MORE ABOUT NUSO
-              </div>
+          <div class="gradient-box">
+            <h2
+              style={{
+                maxWidth: "70%",
+                marginBottom: "2.5rem",
+                textAlign: "center"
+              }}
+            >
+              Find Out More About Our Organization and Our Team
+            </h2>
+            <div className="button-black">
+              LEARN MORE ABOUT NUSO
             </div>
           </div>
         </div>

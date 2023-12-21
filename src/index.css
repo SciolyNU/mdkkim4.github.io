@@ -40,13 +40,14 @@ a:hover {
 
 .navbar {
   height: 89px;
-  margin-left: 160px;
-  margin-right: 160px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   background-color: #260841;
 }
 
@@ -88,16 +89,17 @@ a:hover {
   min-height: 75vh;
   display: flex;
   overflow: hidden;
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 0px auto;
   flex-direction: row;
+  justify-content: space-around;
   padding-top: 69px;
 }
 
 .second-section {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 100px auto 0px;
   flex-direction: row;
 }
@@ -152,7 +154,8 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  margin: 100px auto;
+  max-width: 1120px;
   height: 300px; 
   border-radius: 10px;
   background: linear-gradient(to bottom right, #4E2A84, #B6ACD1);
