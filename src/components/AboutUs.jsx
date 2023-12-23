@@ -1,81 +1,154 @@
 import React from "react";
+import Arch from "./Arch2.png";
+import Home1 from "./Home1.png";
+import Home2 from "./Home2.png";
+import Footer from "./Footer";
 
 function AboutUs() {
-  return (
-    <div className="about-us">
-			<section style={{
-				width: '100vw', 
-				height: '57.5vh',
-        backgroundImage: 'url("https://lh3.googleusercontent.com/vNqVsV9QfIl5aUeCupfP_FCysVshGorOeiZAuNqE2LE4xjylYOulfoA_aBNJ8yhkxm0_mMkgBf0eXHlPAEhOBVh49GAVfz3-FhmCV4YBmDGpEIHo_D57P6_pc1_63CSnLIgIgki8TQ=w2400")',
-				backgroundSize: 'cover',
-				display: 'flex',
-				justifyContent: 'center',
-				alignItems: 'center',
-			}}>
-				<p style={{
-					fontSize: '10vmin',
-					textAlign: 'center',
-					color: "#fff",
-					fontWeight: 700,
-					fontFamily: '"Campton Book","Tahoma",sans-serif',
-          letterSpacing: 2
-				}}>
-					About Our Organization
-				</p> 
-			</section>
-			<p style={{
-				fontSize: '6vmin',
-				textAlign: 'center',
-				fontWeight: 700,
-				fontFamily: '"Campton Book","Tahoma",sans-serif',
-				marginRight: "125px",
-				marginLeft: "125px",
-        paddingTop: "30px",
-        color: "#3c3c3c"
-			}}>
-				Memorable experiences to empower the next generation of leaders and learners in science
-			</p> 
-			<p style={{
-				fontSize: '2.75vmin',
-				textAlign: 'left',
-				fontWeight: 500,
-				fontFamily: '"Campton Book","Tahoma",sans-serif',
-				marginRight: "75px",
-				marginLeft: "75px",
-        color: "#777",
-        paddingTop: "30px",
-        paddingBottom: "30px"
-			}}>
-				Northwestern University Science Olympiad (NUSO) was founded in the spring of 2021 as a passionate community of Science Olympiad 
-				alumni and STEM enthusiasts committed to enriching Science Olympiad in Illinois and the greater Midwest region. Based at our 
-				nationally-recognized Evanston campus, we're focused on delivering a high-level of competition and fostering a love for the 
-				sciences.<br/><br/>
-				
-				As a team, we work year-round on initiatives aimed at achieving our vision: to provide students with unforgettable Science Olympiad 
-				experiences that cement their passions for lifelong learning. We can't wait to see you this coming February in 2024 for our third NUSO 
-				Invitational! *ADD IN MORE INFO NOW
-			</p> 
-			{/* <section style={{
-				width: '100vw', 
-				height: '25vh',
-				backgroundColor: "#4E2A84",
-				backgroundSize: 'cover',
-				display: 'flex',
-				justifyContent: 'center',
-				alignItems: 'center',
-			}}>
-				<p style={{
-					fontSize: '10vmin',
-					textAlign: 'center',
-					color: "#fff",
-					fontWeight: 700,
-					fontFamily: '"Campton Book","Tahoma",sans-serif',
-				}}>
-					2023-2024 Executive Board
-				</p> 
-			</section> */}
-        </div>
-  );
+	return (
+		<div className="home">
+		  <div 
+					style={{
+						maxWidth: "100vw",
+						minHeight: "100vh",
+						position: "relative",
+						overflow: "hidden"
+					}}
+				>
+			<div 
+			  style={{ 
+				marginLeft: "calc(max(10px, 100vw - 1280px))",
+				marginRight: "calc(max(10px, 100vw - 1280px))"
+			  }}
+			>
+			  <div className="first-section" style={{ flexDirection: "column" }}>
+				<div
+				  style={{
+					minHeight: "25vh",
+					maxWidth: "100%",
+					display: "flex",
+					textAlign: "start",
+					flexDirection: "column"
+				  }}
+							>
+				  <div style={{ zIndex: 1 }}>
+					<h1>
+					  Northwestern University<br></br>Science Olympiad
+					</h1>
+					<p
+					  style={{
+						marginTop: "30px"
+					  }}
+					>
+					  February 24th, 2024
+					</p>
+				  </div>
+				</div>
+				<img
+				  src={Arch}
+				  alt="Arch"
+				  style={{ 
+					maxWidth: "415px",
+					maxHeight: "448.7px"
+				  }}
+				/>
+			  </div>
+			  <div className="second-section">
+				<img
+				  src={Home1}
+				  alt="Home1"
+				  style={{ 
+					maxWidth: "27.5%",
+					height: "27.5%" 
+				  }}
+				/>
+				<div style={{ width: "60%" }}>
+				  <div>
+					<p 
+					  style={{
+						fontSize: "2.75vmin",
+						marginBottom: "0.25rem"
+					  }}
+					>
+					  2024 INVITATIONAL
+					</p>
+					<h2
+					  style={{
+						marginBottom: "2rem"
+					  }}
+					>
+					  Learn More About Our Upcoming Invitational
+					</h2>
+					<p
+					  style={{
+						marginBottom: "2.5rem"
+					  }}
+					>
+					  View new announcements, updates, resources, and important tournament day information on our 2024 Invitational page!
+					</p>
+					<div className="button">
+						INVITATIONAL INFORMATION
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div className="second-section">
+				<div style={{ width: "60%" }}>
+				  <div>
+					<p 
+					  style={{
+						fontSize: "2.75vmin",
+						marginBottom: "0.25rem"
+					  }}
+					>
+					  GETTING INVOLVED
+					</p>
+					<h2
+					  style={{
+						marginBottom: "2rem"
+					  }}
+					>
+					  Explore Getting Involved With NU Science Olympiad
+					</h2>
+					<p
+					  style={{
+						marginBottom: "2.5rem"
+					  }}
+					>
+					  Join our growing community of undergraduate students, researchers, and faculty as we prepare for our upcoming invitational!
+					</p>
+					<div className="button">
+						GET ACTIVE WITH NUSO
+					</div>
+				  </div>
+				</div>
+				<img
+				  src={Home2}
+				  alt="Home2"
+				  style={{ 
+					maxWidth: "27.5%",
+					height: "27.5%" 
+				  }}
+				/>
+			  </div>
+			  <div class="gradient-box">
+				<h2
+				  style={{
+					maxWidth: "70%",
+					marginBottom: "2.5rem",
+					textAlign: "center"
+				  }}
+				>
+				  Find Out More About Our Organization and Our Team
+				</h2>
+				<div className="button-black">
+				  LEARN MORE ABOUT NUSO
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  );
 }
 
 export default AboutUs;
