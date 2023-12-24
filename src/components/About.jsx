@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Arch from "./Arch2.png";
-import Home1 from "./Home1.png";
-import Home2 from "./Home2.png";
+import About1 from "./About1.jpg";
 import Footer from "./Footer";
 
 function About() {
@@ -56,22 +54,14 @@ function About() {
                 </p>
               </div>
             </div>
-            {/* <img
-              src={Arch}
-              alt="Arch"
-              style={{ 
-                maxWidth: "410px",
-                maxHeight: "443px"
-              }}
-            /> */}
           </div>
           <div className="second-section">
             <img
-              src={Home1}
-              alt="Home1"
+              src={About1}
+              alt="About1"
               style={{ 
-                maxWidth: window.innerWidth < 866 ? "50%" : "28.5%",
-                height: window.innerWidth < 866 ? "50%" : "28.5%",
+                maxWidth: window.innerWidth < 866 ? "60%" : "32.5%",
+                height: window.innerWidth < 866 ? "60%" : "32.5%",
                 marginBottom: window.innerWidth < 866 ? "100px" : "0px"
               }}
             />
@@ -90,7 +80,7 @@ function About() {
                     marginBottom: "2rem"
                   }}
                 >
-                  Collaborating for Success
+                  Collaborating For Success
                 </h2>
                 <p
                   style={{
@@ -106,8 +96,8 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="second-section">
-		  	<div style={{ width: window.innerWidth < 866 ? "100%" : "60%" }}>
+          <div className="second-section" style={{ marginBottom: "25px" }}>
+		  	<div style={{ width: "100%" }}>
               <div>
                 <p 
                   style={{
@@ -115,49 +105,100 @@ function About() {
                     marginBottom: "0.25rem"
                   }}
                 >
-                  GETTING INVOLVED
+                  OUR TEAM
                 </p>
                 <h2
                   style={{
                     marginBottom: "2rem"
                   }}
                 >
-                  Explore Getting Involved With NU Science Olympiad
+                  Get To Know Our Executive Board
                 </h2>
                 <p
                   style={{
                     marginBottom: "2.5rem"
                   }}
                 >
-                  Join our growing community of undergraduate students, researchers, and faculty as we prepare our upcoming invitational!
+                  Our executive board works year-round to achieve our mission through our annual invitational and other Science Olympiad initiatives. 
+				  Our organization is also supported by the incredible work of our large community of volunteers that help write tests and run events on 
+				  tournament day.
                 </p>
-                <div className="button">
-                    GET ACTIVE WITH NUSO
-                </div>
               </div>
             </div>
-            <img
-              src={Home2}
-              alt="Home2"
-              style={{ 
-                maxWidth: window.innerWidth < 866 ? "50%" : "28.5%",
-                height: window.innerWidth < 866 ? "50%" : "28.5%",
-                marginTop: window.innerWidth < 866 ? "100px" : "0px"
-              }}
-            />
           </div>
-          <div class="gradient-box">
-            <h2
-              style={{
-                maxWidth: "70%",
-                marginBottom: "2.5rem",
-                textAlign: "center"
-              }}
-            >
-              Find Out More About Our Organization and Our Team
-            </h2>
-            <div className="button-black">
-              LEARN MORE ABOUT NUSO
+		  <hr class="solid"></hr>
+		  <div className="image-section">
+		  	<div style={{ width: "100%" }}>
+              <div>
+                <h2
+                  style={{
+                    marginBottom: "2rem",
+					fontSize: "6vmin"
+                  }}
+                >
+                  2024 Tournament Directors
+                </h2>
+              </div>
+            </div>
+			<div style={{ width: "100%" }}>
+              <div>
+                <h2
+                  style={{
+                    marginBottom: "2rem",
+					fontSize: "6vmin"
+                  }}
+                >
+                  Events Coordinators
+                </h2>
+              </div>
+            </div>
+			<div style={{ width: "100%" }}>
+              <div>
+                <h2
+                  style={{
+                    marginBottom: "2rem",
+					fontSize: "6vmin"
+                  }}
+                >
+                  Logistics Coordinators
+                </h2>
+              </div>
+            </div>
+			<div style={{ width: "100%" }}>
+              <div>
+                <h2
+                  style={{
+                    marginBottom: "2rem",
+					fontSize: "6vmin"
+                  }}
+                >
+                  Volunteer Coordinators
+                </h2>
+              </div>
+            </div>
+			<div style={{ width: "100%" }}>
+              <div>
+                <h2
+                  style={{
+                    marginBottom: "2rem",
+					fontSize: "6vmin"
+                  }}
+                >
+                  Finance
+                </h2>
+              </div>
+            </div>
+			<div style={{ width: "100%" }}>
+              <div>
+                <h2
+                  style={{
+                    marginBottom: "2rem",
+					fontSize: "6vmin"
+                  }}
+                >
+                  Technology
+                </h2>
+              </div>
             </div>
           </div>
         </div>

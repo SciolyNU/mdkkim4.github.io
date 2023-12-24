@@ -173,3 +173,17 @@ a:hover {
     height: 300px;
   }
 }
+
+.image-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1120px;
+  margin-top: 50px;
+  margin-bottom: 125px;
+  flex-direction: column;
+}
+
+hr.solid {
+  border-top: 3px solid #fff;
+}
