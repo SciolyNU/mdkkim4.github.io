@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Arch from "./Arch2.png";
 import Home1 from "./Home1.png";
 import Home2 from "./Home2.png";
 import Footer from "./Footer";
 
 function Home() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className="home">
       <div 
@@ -17,11 +25,11 @@ function Home() {
 			>
         <div 
           style={{ 
-            marginLeft: "calc(max(10px, 100vw - 1280px))",
-            marginRight: "calc(max(10px, 100vw - 1280px))"
+            marginLeft: "calc(max(20px, 100vw - 1280px))",
+            marginRight: "calc(max(20px, 100vw - 1280px))"
           }}
         >
-          <div className="first-section" style={{ flexDirection: "column" }}>
+          <div className="first-section">
             <div
               style={{
                 minHeight: "25vh",
@@ -48,8 +56,8 @@ function Home() {
               src={Arch}
               alt="Arch"
               style={{ 
-                maxWidth: "415px",
-                maxHeight: "448.7px"
+                maxWidth: "410px",
+                maxHeight: "443px"
               }}
             />
           </div>
@@ -58,8 +66,9 @@ function Home() {
               src={Home1}
               alt="Home1"
               style={{ 
-                maxWidth: "27.5%",
-                height: "27.5%" 
+                maxWidth: window.innerWidth < 866 ? "50%" : "28.5%",
+                height: window.innerWidth < 866 ? "50%" : "28.5%",
+                marginBottom: window.innerWidth < 866 ? "100px" : "0px"
               }}
             />
             <div style={{ width: "60%" }}>
@@ -87,7 +96,7 @@ function Home() {
                   View new announcements, updates, resources, and important tournament day information on our 2024 Invitational page!
                 </p>
                 <div className="button">
-                    INVITATIONAL INFORMATION
+                  {windowWidth < 866 ? 'INVITE INFORMATION' : 'INVITATIONAL INFORMATION'}
                 </div>
               </div>
             </div>
@@ -115,7 +124,7 @@ function Home() {
                     marginBottom: "2.5rem"
                   }}
                 >
-                  Join our growing community of undergraduate students, researchers, and faculty as we prepare for our upcoming invitational!
+                  Join our growing community of undergraduate students, researchers, and faculty as we prepare our upcoming invitational!
                 </p>
                 <div className="button">
                     GET ACTIVE WITH NUSO
@@ -126,8 +135,9 @@ function Home() {
               src={Home2}
               alt="Home2"
               style={{ 
-                maxWidth: "27.5%",
-                height: "27.5%" 
+                maxWidth: window.innerWidth < 866 ? "50%" : "28.5%",
+                height: window.innerWidth < 866 ? "50%" : "28.5%",
+                marginTop: window.innerWidth < 866 ? "100px" : "0px"
               }}
             />
           </div>

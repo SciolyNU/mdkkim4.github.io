@@ -4,7 +4,7 @@ import Home1 from "./Home1.png";
 import Home2 from "./Home2.png";
 import Footer from "./Footer";
 
-function AboutUs() {
+function About() {
 	return (
 		<div className="home">
 		  <div 
@@ -151,4 +151,4 @@ function AboutUs() {
 	  );
 }
 
-export default AboutUs;
+export default About;

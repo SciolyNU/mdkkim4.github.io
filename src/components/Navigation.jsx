@@ -1,15 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import '../index.css';
 import Logo from "./Logo.png";
 
 function Navigation() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className="navigation">
       <div 
         style={{ 
-          marginLeft: "calc(max(10px, 100vw - 1280px))",
-          marginRight: "calc(max(10px, 100vw - 1280px))"
+          marginLeft: "calc(max(20px, 100vw - 1280px))",
+          marginRight: "calc(max(20px, 100vw - 1280px))"
         }}
       >
         <nav className="navbar navbar-expand">
@@ -26,23 +34,23 @@ function Navigation() {
           <div>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/about-us">
+                <NavLink className="nav-link" to="/about">
                   About
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/2024-invitational">
-                  2024 Invitational
+                  {windowWidth < 866 ? '2024' : '2024 Invitational'}
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/past-tournaments">
-                  Past Tournaments
+                  {windowWidth < 866 ? 'Tournaments' : 'Past Tournaments'}
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/get-involved">
-                  Get Involved
+                  {windowWidth < 866 ? 'Volunteer' : 'Get Involved'}
                 </NavLink>
               </li>
               <li className="nav-item">
