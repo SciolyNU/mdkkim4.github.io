@@ -4,8 +4,8 @@ import Home1 from "./Home1.png";
 import Home2 from "./Home2.png";
 import Footer from "./Footer";
 
-function Home() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+function About() {
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -16,13 +16,13 @@ function Home() {
   return (
     <div className="home">
       <div 
-				style={{
-					maxWidth: "100vw",
-					minHeight: "100vh",
-					position: "relative",
-					overflow: "hidden"
-				}}
-			>
+		style={{
+			maxWidth: "100vw",
+			minHeight: "100vh",
+			position: "relative",
+			overflow: "hidden"
+		}}
+		>
         <div 
           style={{ 
             marginLeft: "calc(max(40px, 100vw - 1280px))",
@@ -41,25 +41,29 @@ function Home() {
 						>
               <div style={{ zIndex: 1 }}>
                 <h1>
-                  Northwestern University<br></br>Science Olympiad
+                  About Us
                 </h1>
                 <p
                   style={{
-                    marginTop: "30px"
+                    marginTop: "50px"
                   }}
                 >
-                  February 24th, 2024
+                  Northwestern University Science Olympiad (NUSO) was founded in 2021 with a mission to better our surrounding 
+				  Science Olympiad community. Composed of Science Olympiad alums and STEM-loving folks, we strive to bring quality competition 
+				  to our nationally-recognized campus. As a dedicated team, we work year-round on initiatives to realize our goal and create 
+				  memorable Science Olympiad experiences for students.<br/><br/>We are currently preparing for our third annual Northwestern Invitational 
+				  on February 24th, 2024.
                 </p>
               </div>
             </div>
-            <img
+            {/* <img
               src={Arch}
               alt="Arch"
               style={{ 
                 maxWidth: "410px",
                 maxHeight: "443px"
               }}
-            />
+            /> */}
           </div>
           <div className="second-section">
             <img
@@ -79,30 +83,31 @@ function Home() {
                     marginBottom: "0.25rem"
                   }}
                 >
-                  2024 INVITATIONAL
+                  OUR WORK
                 </p>
                 <h2
                   style={{
                     marginBottom: "2rem"
                   }}
                 >
-                  Learn More About Our Upcoming Invitational
+                  Collaborating for Success
                 </h2>
                 <p
                   style={{
                     marginBottom: "2.5rem"
                   }}
                 >
-                  View new announcements, updates, resources, and important tournament day information on our 2024 Invitational page!
+                  Beyond our annual invitational, we volunteer at other Science Olympiad competitions to improve the accessibility and quality of
+				  opportunities available to high school students. If you need volunteers to help at your invitational, please reach out to us! 
                 </p>
                 <div className="button">
-                  {windowWidth < 866 ? 'INVITE INFORMATION' : 'INVITATIONAL INFORMATION'}
+                  CONTACT US
                 </div>
               </div>
             </div>
           </div>
           <div className="second-section">
-            <div style={{ width: window.innerWidth < 866 ? "100%" : "60%" }}>
+		  	<div style={{ width: window.innerWidth < 866 ? "100%" : "60%" }}>
               <div>
                 <p 
                   style={{
@@ -161,4 +166,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;

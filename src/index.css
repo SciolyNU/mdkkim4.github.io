@@ -92,7 +92,7 @@ a:hover {
   max-width: 1120px;
   margin: 0px;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 69px;
   @media (min-width: 866px) {
     flex-direction: row;
