@@ -190,15 +190,18 @@ hr.solid {
 
 .image-holder {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  flex-direction: row;
-  margin-bottom: 50px;
+  flex-direction: column;
+  @media (min-width: 866px) {
+    flex-direction: row;
+  }
 }
 
 .image-and-text {
   display: flex;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
+  margin-bottom: 50px;
 }

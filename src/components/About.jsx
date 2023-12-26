@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import About1 from "./About1.jpg";
+import About2 from "./About2.jpg";
 import AliyaBekshenova from "./AliyaBekshenova.jpeg";
 import CarsonWalters from "./CarsonWalters.jpg";
 import ClaireShen from "./ClaireShen.jpg";
+import DaveArthur from "./DaveArthur.jpeg";
 import DavieShi from "./DavieShi.jpeg";
 import EdwardLee from "./EdwardLee.jpg";
 import FarleyWall from "./FarleyWall.jpg";
@@ -11,13 +13,13 @@ import JackVogel from "./JackVogel.jpg";
 import JasonChen from "./JasonChen.jpg";
 import JoanneLi from "./JoanneLi.jpg";
 import KathrynJacksonJones from "./KathrynJacksonJones.jpg";
-import LynnaDeng from "./LynnaDeng.jpg";
 import MichaelKim from "./MichaelKim.jpg";
 import ReedMalcolm from "./ReedMalcolm.png";
 import SkylerStone from "./SkylerStone.jpg";
 import VictorJia from "./VictorJia.jpg";
 import VincentXiong from "./VincentXiong.jpg";
 import WillBruner from "./WillBruner.jpg";
+import Purple from "./Purple.png";
 import Footer from "./Footer";
 
 function About() {
@@ -72,6 +74,47 @@ function About() {
                 </p>
               </div>
             </div>
+          </div>
+		  <div className="second-section">
+            <div style={{ width: window.innerWidth < 866 ? "100%" : "60%" }}>
+              <div>
+                <p 
+                  style={{
+                    fontSize: "2.75vmin",
+                    marginBottom: "0.25rem"
+                  }}
+                >
+                  OUR COMPETITION
+                </p>
+                <h2
+                  style={{
+                    marginBottom: "2rem"
+                  }}
+                >
+                  About The Invitational
+                </h2>
+                <p
+                  style={{
+                    marginBottom: "2.5rem"
+                  }}
+                >
+                  We host a Division C tournament with all 23 national events at our incredible Evanston campus. All tests are written by undergraduates, graduates, and faculty, 
+				  many of whom are Science Olympiad alums that competed at the highest levels.
+                </p>
+                <div className="button">
+                    2024 INVITATIONAL INFORMATION
+                </div>
+              </div>
+            </div>
+            <img
+              src={About2}
+              alt="About2"
+              style={{ 
+                maxWidth: window.innerWidth < 866 ? "60%" : "32.5%",
+                height: window.innerWidth < 866 ? "60%" : "32.5%",
+                marginTop: window.innerWidth < 866 ? "100px" : "0px"
+              }}
+            />
           </div>
           <div className="second-section">
             <img
@@ -161,28 +204,26 @@ function About() {
 			<div className="image-holder">
 				<div className="image-and-text">
 					<img
-					src={JackVogel}
-					alt="JackVogel"
-					style={{
-						width: window.innerWidth < 866 ? "60%" : "90%",
-						height: window.innerWidth < 866 ? "auto" : "90%",
-						marginBottom: window.innerWidth < 866 ? "100px" : "0px",
-					}}
+						src={JackVogel}
+						alt="JackVogel"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
 					/>
-					<p style={{ margin: 0 }}>Jack Vogel</p>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Jack Vogel</p>
 					<p style={{ margin: 0 }}>2025</p>
 				</div>
 				<div className="image-and-text">
 					<img
-					src={JackVogel}
-					alt="SkylerStone"
-					style={{
-						width: window.innerWidth < 866 ? "60%" : "90%",
-						height: window.innerWidth < 866 ? "auto" : "90%",
-						marginBottom: window.innerWidth < 866 ? "100px" : "0px",
-					}}
+						src={SkylerStone}
+						alt="SkylerStone"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
 					/>
-					<p style={{ margin: 0 }}>Skyler Stone</p>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Skyler Stone</p>
 					<p style={{ margin: 0 }}>2025</p>
 				</div>
 			</div>
@@ -198,6 +239,110 @@ function About() {
                 </h2>
               </div>
             </div>
+			<div className="image-holder">
+				<div className="image-and-text">
+					<img
+						src={DaveArthur}
+						alt="DaveArthur"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Dave Arthur</p>
+					<p style={{ margin: 0 }}>2025</p>
+				</div>
+				<div className="image-and-text">
+					<img
+						src={FarleyWall}
+						alt="FarleyWall"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Farley Wall</p>
+					<p style={{ margin: 0 }}>2025</p>
+				</div>
+			</div>
+			<div className="image-holder">
+				<div className="image-and-text">
+					<img
+						src={ReedMalcolm}
+						alt="ReedMalcolm"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Reed Malcolm</p>
+					<p style={{ margin: 0 }}>2025</p>
+				</div>
+				<div className="image-and-text">
+					<img
+						src={AliyaBekshenova}
+						alt="AliyaBekshenova"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Aliya Bekshenova</p>
+					<p style={{ margin: 0 }}>2026</p>
+				</div>
+			</div>
+			<div className="image-holder">
+				<div className="image-and-text">
+					<img
+						src={CarsonWalters}
+						alt="CarsonWalters"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Carson Walters</p>
+					<p style={{ margin: 0 }}>2026</p>
+				</div>
+				<div className="image-and-text">
+					<img
+						src={GinaSong}
+						alt="GinaSong"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Gina Song</p>
+					<p style={{ margin: 0 }}>2026</p>
+				</div>
+			</div>
+			<div className="image-holder">
+				<div className="image-and-text">
+					<img
+						src={EdwardLee}
+						alt="EdwardLee"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Edward Lee</p>
+					<p style={{ margin: 0 }}>2027</p>
+				</div>
+				<div className="image-and-text">
+					<img
+						src={VictorJia}
+						alt="VictorJia"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Victor Jia</p>
+					<p style={{ margin: 0 }}>2027</p>
+				</div>
+			</div>
 			<div style={{ width: "100%" }}>
               <div>
                 <h2
@@ -210,6 +355,58 @@ function About() {
                 </h2>
               </div>
             </div>
+			<div className="image-holder">
+				<div className="image-and-text">
+					<img
+						src={KathrynJacksonJones}
+						alt="KathrynJacksonJones"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Kathryn Jackson-Jones</p>
+					<p style={{ margin: 0 }}>Postdoc</p>
+				</div>
+				<div className="image-and-text">
+					<img
+						src={ClaireShen}
+						alt="ClaireShen"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Claire Shen</p>
+					<p style={{ margin: 0 }}>2026</p>
+				</div>
+			</div>
+			<div className="image-holder">
+				<div className="image-and-text">
+					<img
+						src={VincentXiong}
+						alt="VincentXiong"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Vincent Xiong</p>
+					<p style={{ margin: 0 }}>2026</p>
+				</div>
+				<div className="image-and-text">
+					<img
+						src={WillBruner}
+						alt="WillBruner"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Will Bruner</p>
+					<p style={{ margin: 0 }}>2027</p>
+				</div>
+			</div>
 			<div style={{ width: "100%" }}>
               <div>
                 <h2
@@ -222,6 +419,32 @@ function About() {
                 </h2>
               </div>
             </div>
+			<div className="image-holder">
+				<div className="image-and-text">
+					<img
+						src={DaveArthur}
+						alt="DaveArthur"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Dave Arthur</p>
+					<p style={{ margin: 0 }}>2026</p>
+				</div>
+				<div className="image-and-text">
+					<img
+						src={JasonChen}
+						alt="JasonChen"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Jason Chen</p>
+					<p style={{ margin: 0 }}>2026</p>
+				</div>
+			</div>
 			<div style={{ width: "100%" }}>
               <div>
                 <h2
@@ -234,6 +457,32 @@ function About() {
                 </h2>
               </div>
             </div>
+			<div className="image-holder">
+				<div className="image-and-text">
+					<img
+						src={JoanneLi}
+						alt="JoanneLi"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Joanne Li</p>
+					<p style={{ margin: 0 }}>2025</p>
+				</div>
+				{windowWidth >= 866 ? (
+					<div className="image-and-text">
+					<img
+						src={Purple}
+						alt="Purple"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+				</div>
+				) : null }
+			</div>
 			<div style={{ width: "100%" }}>
               <div>
                 <h2
@@ -246,6 +495,32 @@ function About() {
                 </h2>
               </div>
             </div>
+			<div className="image-holder">
+				<div className="image-and-text">
+					<img
+						src={MichaelKim}
+						alt="MichaelKim"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Michael Kim</p>
+					<p style={{ margin: 0 }}>2025</p>
+				</div>
+				{windowWidth >= 866 ? (
+					<div className="image-and-text">
+					<img
+						src={Purple}
+						alt="Purple"
+						style={{
+							width: "80%",
+							height: "80%"
+						}}
+					/>
+				</div>
+				) : null }
+			</div>
           </div>
         </div>
       </div>
