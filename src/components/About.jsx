@@ -1,5 +1,23 @@
 import React, { useState, useEffect } from "react";
 import About1 from "./About1.jpg";
+import AliyaBekshenova from "./AliyaBekshenova.jpeg";
+import CarsonWalters from "./CarsonWalters.jpg";
+import ClaireShen from "./ClaireShen.jpg";
+import DavieShi from "./DavieShi.jpeg";
+import EdwardLee from "./EdwardLee.jpg";
+import FarleyWall from "./FarleyWall.jpg";
+import GinaSong from "./GinaSong.jpeg";
+import JackVogel from "./JackVogel.jpg";
+import JasonChen from "./JasonChen.jpg";
+import JoanneLi from "./JoanneLi.jpg";
+import KathrynJacksonJones from "./KathrynJacksonJones.jpg";
+import LynnaDeng from "./LynnaDeng.jpg";
+import MichaelKim from "./MichaelKim.jpg";
+import ReedMalcolm from "./ReedMalcolm.png";
+import SkylerStone from "./SkylerStone.jpg";
+import VictorJia from "./VictorJia.jpg";
+import VincentXiong from "./VincentXiong.jpg";
+import WillBruner from "./WillBruner.jpg";
 import Footer from "./Footer";
 
 function About() {
@@ -132,7 +150,7 @@ function About() {
               <div>
                 <h2
                   style={{
-                    marginBottom: "2rem",
+                    marginBottom: "50px",
 					fontSize: "6vmin"
                   }}
                 >
@@ -140,22 +158,39 @@ function About() {
                 </h2>
               </div>
             </div>
-			<div className="image-divider">
-				<img
-				src={About1}
-				alt="About1"
-				style={{ 
-					maxWidth: window.innerWidth < 866 ? "60%" : "32.5%",
-					height: window.innerWidth < 866 ? "60%" : "32.5%",
-					marginBottom: window.innerWidth < 866 ? "100px" : "0px"
-				}}
-				/>
+			<div className="image-holder">
+				<div className="image-and-text">
+					<img
+					src={JackVogel}
+					alt="JackVogel"
+					style={{
+						width: window.innerWidth < 866 ? "60%" : "90%",
+						height: window.innerWidth < 866 ? "auto" : "90%",
+						marginBottom: window.innerWidth < 866 ? "100px" : "0px",
+					}}
+					/>
+					<p style={{ margin: 0 }}>Jack Vogel</p>
+					<p style={{ margin: 0 }}>2025</p>
+				</div>
+				<div className="image-and-text">
+					<img
+					src={JackVogel}
+					alt="SkylerStone"
+					style={{
+						width: window.innerWidth < 866 ? "60%" : "90%",
+						height: window.innerWidth < 866 ? "auto" : "90%",
+						marginBottom: window.innerWidth < 866 ? "100px" : "0px",
+					}}
+					/>
+					<p style={{ margin: 0 }}>Skyler Stone</p>
+					<p style={{ margin: 0 }}>2025</p>
+				</div>
 			</div>
 			<div style={{ width: "100%" }}>
               <div>
                 <h2
                   style={{
-                    marginBottom: "2rem",
+                    marginBottom: "50px",
 					fontSize: "6vmin"
                   }}
                 >
@@ -167,7 +202,7 @@ function About() {
               <div>
                 <h2
                   style={{
-                    marginBottom: "2rem",
+                    marginBottom: "50px",
 					fontSize: "6vmin"
                   }}
                 >
@@ -179,7 +214,7 @@ function About() {
               <div>
                 <h2
                   style={{
-                    marginBottom: "2rem",
+                    marginBottom: "50px",
 					fontSize: "6vmin"
                   }}
                 >
@@ -191,7 +226,7 @@ function About() {
               <div>
                 <h2
                   style={{
-                    marginBottom: "2rem",
+                    marginBottom: "50px",
 					fontSize: "6vmin"
                   }}
                 >
@@ -203,7 +238,7 @@ function About() {
               <div>
                 <h2
                   style={{
-                    marginBottom: "2rem",
+                    marginBottom: "50px",
 					fontSize: "6vmin"
                   }}
                 >
