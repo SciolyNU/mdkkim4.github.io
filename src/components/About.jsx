@@ -140,6 +140,17 @@ function About() {
                 </h2>
               </div>
             </div>
+			<div className="image-divider">
+				<img
+				src={About1}
+				alt="About1"
+				style={{ 
+					maxWidth: window.innerWidth < 866 ? "60%" : "32.5%",
+					height: window.innerWidth < 866 ? "60%" : "32.5%",
+					marginBottom: window.innerWidth < 866 ? "100px" : "0px"
+				}}
+				/>
+			</div>
 			<div style={{ width: "100%" }}>
               <div>
                 <h2
