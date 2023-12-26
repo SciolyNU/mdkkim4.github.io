@@ -126,7 +126,7 @@ function About() {
               </div>
             </div>
           </div>
-		  <hr class="solid"></hr>
+		  <hr class="solid"/>
 		  <div className="image-section">
 		  	<div style={{ width: "100%" }}>
               <div>
