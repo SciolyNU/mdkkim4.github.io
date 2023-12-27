@@ -178,7 +178,7 @@ function About() {
                 </h2>
                 <p
                   style={{
-                    marginBottom: "2.5rem"
+                    marginBottom: "1.5rem"
                   }}
                 >
                   Our executive board works year-round to achieve our mission through our annual invitational and other Science Olympiad initiatives. 
@@ -188,7 +188,7 @@ function About() {
               </div>
             </div>
           </div>
-		  <hr class="solid"/>
+		  <hr class="solid" style={{ borderTop: "1.5px solid #fff" }}/>
 		  <div className="image-section">
 		  	<div style={{ width: "100%" }}>
               <div>

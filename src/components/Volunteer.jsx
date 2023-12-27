@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import About1 from "./About1.jpg";
-import About2 from "./About2.jpg";
+import React from "react";
 import Footer from "./Footer";
 
 function Volunteer() {
@@ -34,7 +32,6 @@ function Volunteer() {
 					<h1>
 						Get Involved
 					</h1>
-					<hr class="solid"/>
 					<p
 						style={{
 							marginTop: "50px",
