@@ -22,7 +22,7 @@ import WillBruner from "./WillBruner.jpg";
 import Purple from "./Purple.png";
 import Footer from "./Footer";
 
-function About() {
+function Invitational() {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -56,12 +56,11 @@ function About() {
                 textAlign: "start",
                 flexDirection: "column"
               }}
-			>
+						>
               <div style={{ zIndex: 1 }}>
                 <h1>
                   About Us
                 </h1>
-				<hr class="solid"/>
                 <p
                   style={{
                     marginTop: "50px"
@@ -243,14 +242,14 @@ function About() {
 			<div className="image-holder">
 				<div className="image-and-text">
 					<img
-						src={DavieShi}
-						alt="DavieShi"
+						src={DaveArthur}
+						alt="DaveArthur"
 						style={{
 							width: "80%",
 							height: "80%"
 						}}
 					/>
-					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Davie Shi</p>
+					<p style={{ margin: "20px 0 0 0", fontSize: "4vmin", fontWeight: 600 }}>Dave Arthur</p>
 					<p style={{ margin: 0 }}>2025</p>
 				</div>
 				<div className="image-and-text">
@@ -529,4 +528,4 @@ function About() {
   );
 }
 
-export default About;
+export default Invitational;

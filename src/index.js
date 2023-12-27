@@ -8,9 +8,9 @@ import {
   Home,
   About,
   Contact,
-  Blog,
-  Posts,
-  Post,
+  Invitational,
+  Tournaments,
+  Volunteer
 } from "./components";
 
 ReactDOM.render(
@@ -19,10 +19,11 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/blog" element={<Blog />} />
+      <Route path="/2024-invitational" element={<Invitational />} />
+      <Route path="/past-tournaments" element={<Tournaments />} />
+      <Route path="/get-involved" element={<Volunteer />} />
+      <Route path="/contact-us" element={<Contact />} />
     </Routes>
   </Router>,
-
   document.getElementById("root")
 );

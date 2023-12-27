@@ -22,7 +22,7 @@ import WillBruner from "./WillBruner.jpg";
 import Purple from "./Purple.png";
 import Footer from "./Footer";
 
-function About() {
+function Tournaments() {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -56,12 +56,11 @@ function About() {
                 textAlign: "start",
                 flexDirection: "column"
               }}
-			>
+						>
               <div style={{ zIndex: 1 }}>
                 <h1>
                   About Us
                 </h1>
-				<hr class="solid"/>
                 <p
                   style={{
                     marginTop: "50px"
@@ -529,4 +528,4 @@ function About() {
   );
 }
 
-export default About;
+export default Tournaments;

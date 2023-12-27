@@ -1,6 +1,6 @@
 import React from "react";
 
-function ContactUs() {
+function Contact() {
   return (
     <div className="contact-us">
 			<section style={{
@@ -78,4 +78,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default Contact;
