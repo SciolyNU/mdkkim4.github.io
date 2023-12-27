@@ -4,14 +4,6 @@ import About2 from "./About2.jpg";
 import Footer from "./Footer";
 
 function Volunteer() {
-	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
   return (
     <div className="home">
       <div 
