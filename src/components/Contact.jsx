@@ -31,6 +31,7 @@ function Contact() {
 					display: 'flex',
 					flexDirection: 'column',
 					justifyContent: 'center',
+					alignItems: 'center',
 					margin: '0 auto',
 					paddingLeft: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px', 
 					paddingRight: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px',
@@ -63,23 +64,25 @@ function Contact() {
 							</div>
 						</div>
 					</div>
-					<div
-						style={{
-							display: "flex",
-							flexDirection: windowWidth < 500 ? "column" : "row",
-							marginTop: "50px"
-						}}
-					>
-						<a href={'mailto:recipient@example.com'}>
-							<div className="button" style={{ marginRight: "50px", marginBottom: "25px" }}>
-								OUR EMAIL
-							</div>
-						</a>
-						<a href={'https://scilympiad.com/il-nu'}>
-							<div className="button">
-								SCILYMPIAD
-							</div>
-						</a>
+					<div>
+						<div
+							style={{
+								display: "flex",
+								flexDirection: windowWidth < 500 ? "column" : "row",
+								marginTop: "50px",
+							}}
+						>
+							<a href={'mailto:recipient@example.com'}>
+								<div className="button" style={{ marginRight: "50px", marginBottom: "25px" }}>
+									OUR EMAIL
+								</div>
+							</a>
+							<a href={'https://scilympiad.com/il-nu'}>
+								<div className="button">
+									SCILYMPIAD
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

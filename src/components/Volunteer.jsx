@@ -32,6 +32,7 @@ function Volunteer() {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
+			alignItems: 'center',
             margin: '0 auto',
             paddingLeft: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px', 
             paddingRight: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px',
@@ -68,7 +69,7 @@ function Volunteer() {
 				style={{
 					display: "flex",
 					flexDirection: windowWidth < 500 ? "column" : "row",
-					marginTop: "50px"
+					marginTop: "50px",
 				}}
 			>
 				<a href={'https://docs.google.com/forms/d/e/1FAIpQLSetG4g-aO2HZjgbx9dnPUoYNv4p40ZMVkyXHRWcgh5Ho9A2jg/viewform?usp=sharing'}>

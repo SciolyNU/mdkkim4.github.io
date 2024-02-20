@@ -29,12 +29,13 @@ function Home() {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
+            alignItems: 'center',
             margin: '0 auto',
             paddingLeft: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px', 
             paddingRight: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px',
           }}
         >
-          <div className="first-section">
+          <div className="first-section" style={{ flexDirection: windowWidth < 866 ? 'column' : 'row' }}>
             <div
               style={{
                 minHeight: "25vh",

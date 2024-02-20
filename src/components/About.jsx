@@ -47,6 +47,7 @@ function About() {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
+			alignItems: 'center',
             margin: '0 auto',
             paddingLeft: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px', 
             paddingRight: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px',
