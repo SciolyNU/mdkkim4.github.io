@@ -35,8 +35,14 @@ function Invitational() {
 				>
 				<div 
 				style={{ 
-					marginLeft: "calc(max(40px, 100vw - 1280px))",
-					marginRight: "calc(max(40px, 100vw - 1280px))"
+					maxWidth: '1280px',
+					display: 'flex',
+					flexDirection: 'column',
+					justifyContent: 'center',
+					alignItems: 'center', 
+					margin: '0 auto',
+					paddingLeft: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px', 
+					paddingRight: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px',
 				}}
 				>
 				<div className="first-section">
@@ -64,7 +70,7 @@ function Invitational() {
 					</div>
 					</div>
 				</div>
-				<div className="first-section">
+				{/* <div className="first-section">
 						<div>
 						<h2
 							style={{
@@ -103,7 +109,7 @@ function Invitational() {
 							Our first annual Northwestern Invitational took place virtually on February 26th, 2022. Check back for more updates on information.
 						</p>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div> 

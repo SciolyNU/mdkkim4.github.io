@@ -25,8 +25,13 @@ function Home() {
 			>
         <div 
           style={{ 
-            marginLeft: "calc(max(40px, 100vw - 1280px))",
-            marginRight: "calc(max(40px, 100vw - 1280px))"
+            maxWidth: '1280px',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            margin: '0 auto',
+            paddingLeft: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px', 
+            paddingRight: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px',
           }}
         >
           <div className="first-section">
@@ -56,21 +61,23 @@ function Home() {
               src={Arch}
               alt="Arch"
               style={{ 
-                maxWidth: "410px",
-                maxHeight: "443px"
+                maxWidth: window.innerWidth < 490 ? "300px" : "410px",
+                maxHeight: window.innerWidth < 490 ? "324.15px" : "443px"
               }}
             />
           </div>
           <div className="second-section">
-            <img
-              src={Home1}
-              alt="Home1"
-              style={{ 
-                maxWidth: window.innerWidth < 866 ? "50%" : "28.5%",
-                height: window.innerWidth < 866 ? "50%" : "28.5%",
-                marginBottom: window.innerWidth < 866 ? "100px" : "0px"
-              }}
-            />
+            {window.innerWidth >= 866 ? (
+              <img
+                src={Home1}
+                alt="Home1"
+                style={{ 
+                  maxWidth: "28.5%",
+                  height: "28.5%",
+                  marginBottom: "0px"
+                }}
+              />
+            ) : null}
             <div style={{ width: window.innerWidth < 866 ? "100%" : "60%" }}>
               <div>
                 <p 
@@ -95,9 +102,11 @@ function Home() {
                 >
                   View new announcements, updates, resources, and important tournament day information on our 2024 Invitational page!
                 </p>
-                <div className="button">
-                  {windowWidth < 866 ? 'INVITE INFORMATION' : 'INVITATIONAL INFORMATION'}
-                </div>
+                <a href={'2024-invitational'}>
+                  <div className="button">
+                    {windowWidth < 866 ? 'INVITE INFORMATION' : 'INVITATIONAL INFORMATION'}
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -126,20 +135,24 @@ function Home() {
                 >
                   Join our growing community of undergraduate students, researchers, and faculty as we prepare our upcoming invitational!
                 </p>
-                <div className="button">
-                    GET ACTIVE WITH NUSO
-                </div>
+                <a href={'get-involved'}>
+                  <div className="button">
+                      GET ACTIVE WITH NUSO
+                  </div>
+                </a>
               </div>
             </div>
-            <img
-              src={Home2}
-              alt="Home2"
-              style={{ 
-                maxWidth: window.innerWidth < 866 ? "50%" : "28.5%",
-                height: window.innerWidth < 866 ? "50%" : "28.5%",
-                marginTop: window.innerWidth < 866 ? "100px" : "0px"
-              }}
-            />
+            {window.innerWidth >= 866 ? (
+              <img
+                src={Home2}
+                alt="Home2"
+                style={{ 
+                  maxWidth: "28.5%",
+                  height: "28.5%",
+                  marginBottom: "0px"
+                }}
+              />
+            ) : null}
           </div>
           <div class="gradient-box">
             <h2
@@ -151,9 +164,11 @@ function Home() {
             >
               Find Out More About Our Organization and Our Team
             </h2>
-            <div className="button-black">
-              LEARN MORE ABOUT NUSO
-            </div>
+            <a href={'about'}>
+              <div className="button-black">
+                LEARN MORE ABOUT NUSO
+              </div>
+            </a>
           </div>
         </div>
       </div>

@@ -8,20 +8,20 @@ body {
 }
 
 h1 {
-  font-size: 8.85vmin;
+  font-size: 64px;
   font-weight: 700;
   color: #fff;
   margin: "0px";
 }
 
 h2 {
-  font-size: 7vmin;
+  font-size: 52px;
   font-weight: 600;
   color: #fff;
 }
 
 p {
-  font-size: 3vmin;
+  font-size: 21px;
   font-weight: 400;
   color: #fff;
 }
@@ -52,13 +52,13 @@ a:hover {
 }
 
 .nav-item {
-  font-size: 2.5vmin;
+  font-size: 18px;
   padding-left: 6px;
   font-weight: 500;
 }
 
 .nav-item:hover {
-  font-size: 2.5vmin;
+  font-size: 18px;
   padding-left: 6px;
   font-weight: 600;
 }
@@ -73,14 +73,14 @@ a:hover {
 
 .navbar-brand{
   color: #fff;
-  font-size: 3.5vmin;
+  font-size: 27px;
   padding-right: 4px;
   font-weight: 600;
 }
 
 .navbar-brand:hover {
   color: #fff;
-  font-size: 3.5vmin;
+  font-size: 27px;
   padding-right: 4px;
   font-weight: 600;
 }
@@ -118,7 +118,7 @@ a:hover {
   justify-content: center;
   background-color: #937BA1;
   color: white;
-  font-size: 2.5vmin;
+  font-size: 18px;
   font-weight: 600;
   height: fit-content;
   width: fit-content;
@@ -140,7 +140,7 @@ a:hover {
   justify-content: center;
   background-color: black;
   color: white;
-  font-size: 2.5vmin;
+  font-size: 18px;
   font-weight: 600;
   height: fit-content;
   width: fit-content;
@@ -165,7 +165,7 @@ a:hover {
   margin-top: 125px;
   margin-bottom: 125px;
   max-width: 1120px;
-  height: 400px; 
+  height: 500px; 
   border-radius: 10px;
   background: linear-gradient(to bottom right, #4E2A84, #B6ACD1);
   overflow: hidden;

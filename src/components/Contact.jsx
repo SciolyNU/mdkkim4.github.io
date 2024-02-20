@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function Contact() {
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+	useEffect(() => {
+	  const handleResize = () => {
+		setWindowWidth(window.innerWidth);
+	  };
+  
+	  window.addEventListener('resize', handleResize);
+  
+	  return () => {
+		window.removeEventListener('resize', handleResize);
+	  };
+	}, []);
+
 	return (
 		<div className="home">
 			<div 
@@ -12,10 +26,15 @@ function Contact() {
 				}}
 			>
 				<div 
-					style={{ 
-					marginLeft: "calc(max(40px, 100vw - 1280px))",
-					marginRight: "calc(max(40px, 100vw - 1280px))"
-					}}
+				style={{ 
+					maxWidth: '1280px',
+					display: 'flex',
+					flexDirection: 'column',
+					justifyContent: 'center',
+					margin: '0 auto',
+					paddingLeft: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px', 
+					paddingRight: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px',
+				}}
 				>
 					<div className="first-section">
 						<div
@@ -47,16 +66,20 @@ function Contact() {
 					<div
 						style={{
 							display: "flex",
-							flexDirection: "row",
+							flexDirection: windowWidth < 500 ? "column" : "row",
 							marginTop: "50px"
 						}}
 					>
-						<div className="button" style={{ marginRight: "50px" }}>
-							OUR EMAIL
-						</div>
-						<div className="button">
-							SCILYMPIAD
-						</div>
+						<a href={'mailto:recipient@example.com'}>
+							<div className="button" style={{ marginRight: "50px", marginBottom: "25px" }}>
+								OUR EMAIL
+							</div>
+						</a>
+						<a href={'https://scilympiad.com/il-nu'}>
+							<div className="button">
+								SCILYMPIAD
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>

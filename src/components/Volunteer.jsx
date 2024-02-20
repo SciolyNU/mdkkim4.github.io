@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "./Footer";
 
 function Volunteer() {
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+	useEffect(() => {
+	  const handleResize = () => {
+		setWindowWidth(window.innerWidth);
+	  };
+  
+	  window.addEventListener('resize', handleResize);
+  
+	  return () => {
+		window.removeEventListener('resize', handleResize);
+	  };
+	}, []);
+	
   return (
     <div className="home">
       <div 
@@ -14,8 +28,13 @@ function Volunteer() {
 		>
         <div 
           style={{ 
-            marginLeft: "calc(max(40px, 100vw - 1280px))",
-            marginRight: "calc(max(40px, 100vw - 1280px))"
+            maxWidth: '1280px',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            margin: '0 auto',
+            paddingLeft: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px', 
+            paddingRight: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px',
           }}
         >
 			<div className="first-section">
@@ -32,6 +51,7 @@ function Volunteer() {
 					<h1>
 						Get Involved
 					</h1>
+					<hr class="solid"/>
 					<p
 						style={{
 							marginTop: "50px",
@@ -47,16 +67,20 @@ function Volunteer() {
 			<div
 				style={{
 					display: "flex",
-					flexDirection: "row",
+					flexDirection: windowWidth < 500 ? "column" : "row",
 					marginTop: "50px"
 				}}
 			>
-				<div className="button" style={{ marginRight: "50px" }}>
-					INTEREST FORM
-				</div>
-				<div className="button">
-					DISCORD SERVER
-				</div>
+				<a href={'https://docs.google.com/forms/d/e/1FAIpQLSetG4g-aO2HZjgbx9dnPUoYNv4p40ZMVkyXHRWcgh5Ho9A2jg/viewform?usp=sharing'}>
+					<div className="button" style={{ marginRight: "50px", marginBottom: "25px" }}>
+						INTEREST FORM
+					</div>
+				</a>
+				<a href={'https://discord.gg/c4Pxt7zGVd'}>
+					<div className="button">
+						DISCORD SERVER
+					</div>
+				</a>
 			</div>
         </div>
       </div>

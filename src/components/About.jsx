@@ -43,8 +43,13 @@ function About() {
 		>
         <div 
           style={{ 
-            marginLeft: "calc(max(40px, 100vw - 1280px))",
-            marginRight: "calc(max(40px, 100vw - 1280px))"
+            maxWidth: '1280px',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            margin: '0 auto',
+            paddingLeft: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px', 
+            paddingRight: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px',
           }}
         >
           <div className="first-section">
@@ -102,31 +107,37 @@ function About() {
                   We host a Division C tournament with all 23 national events at our incredible Evanston campus. All tests are written by undergraduates, graduates, and faculty, 
 				  many of whom are Science Olympiad alums that competed at the highest levels.
                 </p>
-                <div className="button">
-                    2024 INVITATIONAL INFORMATION
-                </div>
+				<a href={'2024-invitational'}>
+					<div className="button">
+						2024 INVITATIONAL INFORMATION
+					</div>
+				</a>
               </div>
             </div>
-            <img
-              src={About2}
-              alt="About2"
-              style={{ 
-                maxWidth: window.innerWidth < 866 ? "60%" : "32.5%",
-                height: window.innerWidth < 866 ? "60%" : "32.5%",
-                marginTop: window.innerWidth < 866 ? "100px" : "0px"
-              }}
-            />
+			{window.innerWidth >= 866 ? (
+				<img
+				src={About2}
+				alt="About2"
+				style={{ 
+					maxWidth: window.innerWidth < 866 ? "60%" : "32.5%",
+					height: window.innerWidth < 866 ? "60%" : "32.5%",
+					marginTop: window.innerWidth < 866 ? "100px" : "0px"
+				}}
+				/>
+			) : null}
           </div>
           <div className="second-section">
-            <img
-              src={About1}
-              alt="About1"
-              style={{ 
-                maxWidth: window.innerWidth < 866 ? "60%" : "32.5%",
-                height: window.innerWidth < 866 ? "60%" : "32.5%",
-                marginBottom: window.innerWidth < 866 ? "100px" : "0px"
-              }}
-            />
+		  	{window.innerWidth >= 866 ? (
+				<img
+				src={About1}
+				alt="About1"
+				style={{ 
+					maxWidth: window.innerWidth < 866 ? "60%" : "32.5%",
+					height: window.innerWidth < 866 ? "60%" : "32.5%",
+					marginBottom: window.innerWidth < 866 ? "100px" : "0px"
+				}}
+				/>
+			) : null}
             <div style={{ width: window.innerWidth < 866 ? "100%" : "60%" }}>
               <div>
                 <p 
@@ -152,9 +163,11 @@ function About() {
                   Beyond our annual invitational, we volunteer at other Science Olympiad competitions to improve the accessibility and quality of
 				  opportunities available to high school students. If you need volunteers to help at your invitational, please reach out to us! 
                 </p>
-                <div className="button">
-                  CONTACT US
-                </div>
+				<a href={'contact-us'}>
+					<div className="button">
+						CONTACT US
+					</div>
+				</a>
               </div>
             </div>
           </div>
@@ -186,9 +199,9 @@ function About() {
 				  tournament day.
                 </p>
               </div>
+			  <hr class="solid"/>
             </div>
           </div>
-		  <hr class="solid" style={{ borderTop: "1.5px solid #fff" }}/>
 		  <div className="image-section">
 		  	<div style={{ width: "100%" }}>
               <div>

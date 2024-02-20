@@ -15,10 +15,14 @@ function Navigation() {
   return (
     <div className="navigation">
       <div 
-        style={{ 
-          marginLeft: "calc(max(20px, 100vw - 1280px))",
-          marginRight: "calc(max(20px, 100vw - 1280px))"
-        }}
+          style={{ 
+            maxWidth: '1280px',
+            display: 'flex',
+            flexDirection: 'column',
+            margin: '0 auto',
+            paddingLeft: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px',
+            paddingRight: Math.max(40, (100 - (1280 / window.innerWidth) * 100) / 2) + 'px',
+          }}
       >
         <nav className="navbar navbar-expand">
           <NavLink className="navbar-brand" to="/">
