@@ -19,7 +19,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/2024-invitational" element={<Invitational />} />
+      <Route path="/2025-invitational" element={<Invitational />} />
       <Route path="/past-tournaments" element={<Tournaments />} />
       <Route path="/get-involved" element={<Volunteer />} />
       <Route path="/contact-us" element={<Contact />} />

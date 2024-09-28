@@ -54,11 +54,50 @@ function Tournaments() {
                     marginTop: "50px"
                   }}
                 >
-                  We are currently preparing to host our third annual Northwestern Invitational. Past tournament exams and answer keys, team lists, and results can be found below.
+                  We are currently preparing to host our fourth annual Northwestern Invitational. Past tournament exams and answer keys, team lists, and results can be found below.
                 </p>
               </div>
             </div>
           </div>
+					<div className="first-section">
+				<div>
+					<h2
+						style={{
+						marginBottom: "1rem",
+						fontSize: "6vmin"
+						}}
+					>
+						2024 Invitational
+					</h2>
+					<hr class="solid" style={{ borderTop: "1.5px solid #fff" }}/>
+					<p
+						style={{
+						marginBottom: "2.5rem"
+						}}
+					>
+						Our third annual Northwestern Invitational took place in-person at our Evanston campus on February 24th, 2024. Congratulations to Marquette University High School from Milwaukee, WI on their victory! 
+						Thank you to all of the teams, coaches, and volunteers for making the tournament a success! See the available tests, answer keys, and scoresheets below.
+					</p>
+					<div
+						style={{
+							display: "flex",
+							flexDirection: windowWidth < 500 ? "column" : "row",
+							marginTop: "50px"
+						}}
+					>
+						<a href={'https://www.duosmium.org/results/2024-02-24_northwestern_invitational_c/'}>
+							<div className="button" style={{ marginRight: "50px", marginBottom: "25px" }}>
+								SCORESHEET
+							</div>
+						</a>
+						{/* <a href={'https://drive.google.com/drive/folders/1zBI-xbTLdA8KquwZg0PdK4t7vI1lAiL-?usp=sharing'}>
+							<div className="button">
+								2023 TESTS
+							</div>
+						</a> */}
+					</div>
+				</div>
+			</div>
 		  <div className="first-section">
 				<div>
 					<h2

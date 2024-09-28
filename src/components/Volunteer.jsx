@@ -72,7 +72,7 @@ function Volunteer() {
 					marginTop: "50px",
 				}}
 			>
-				<a href={'https://docs.google.com/forms/d/e/1FAIpQLSetG4g-aO2HZjgbx9dnPUoYNv4p40ZMVkyXHRWcgh5Ho9A2jg/viewform?usp=sharing'}>
+				<a href={'https://forms.gle/8Z16TaUokaEN2S2A6'}>
 					<div className="button" style={{ marginRight: "50px", marginBottom: "25px" }}>
 						INTEREST FORM
 					</div>

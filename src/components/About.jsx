@@ -77,7 +77,7 @@ function About() {
 				  Science Olympiad community. Composed of Science Olympiad alums and STEM-loving folks, we strive to bring quality competition 
 				  to our nationally-recognized campus. As a dedicated team, we work year-round on initiatives to realize our goal and create 
 				  memorable Science Olympiad experiences for students.<br/><br/>We are currently preparing for our third annual Northwestern Invitational 
-				  on February 24th, 2024.
+				  on February 22nd, 2025.
                 </p>
               </div>
             </div>
@@ -110,7 +110,7 @@ function About() {
                 </p>
 				<a href={'2024-invitational'}>
 					<div className="button">
-						2024 INVITATIONAL INFORMATION
+						2025 INVITATIONAL INFORMATION
 					</div>
 				</a>
               </div>

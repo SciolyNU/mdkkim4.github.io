@@ -65,8 +65,51 @@ function Invitational() {
 							marginTop: "50px"
 						}}
 						>
-						Our third annual Northwestern Invitational will take place in-person at our Evanston campus on February 24th, 2024. Please check back for new tournament updates and see important information below.
+						Our fourth annual Northwestern Invitational will take place in-person at our Evanston campus on February 22nd, 2025. 
 						</p>
+					</div>
+					</div>
+				</div>
+				<div className="first-section">
+					<div
+					style={{
+						minHeight: "25vh",
+						maxWidth: "100%",
+						display: "flex",
+						textAlign: "start",
+						flexDirection: "column"
+					}}
+								>
+					<div style={{ zIndex: 1 }}>
+						<h1>
+						Registration
+						</h1>
+						<hr class="solid"/>
+						<p
+						style={{
+							marginTop: "50px"
+						}}
+						>
+						Tournament registration will open on September 30th, 2024 and will close on October 7th, 2024. Please visit our Scilympiad to register your school for our 2025 Invitational. 
+						</p>
+						<div
+						style={{
+							display: "flex",
+							flexDirection: "row",
+							marginTop: "50px"
+						}}
+					>
+						<a href={'https://scilympiad.com/il-nu'}>
+							<div className="button" style={{ marginRight: "50px", marginBottom: "25px" }}>
+								SCILYMPIAD
+							</div>
+						</a>
+						{/* <a href={'https://drive.google.com/drive/folders/1zBI-xbTLdA8KquwZg0PdK4t7vI1lAiL-?usp=sharing'}>
+							<div className="button">
+								2023 TESTS
+							</div>
+						</a> */}
+					</div>
 					</div>
 					</div>
 				</div>
