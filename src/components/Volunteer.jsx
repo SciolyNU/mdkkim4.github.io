@@ -77,7 +77,7 @@ function Volunteer() {
 						INTEREST FORM
 					</div>
 				</a>
-				<a href={'https://discord.gg/c4Pxt7zGVd'}>
+				<a href={'https://discord.com/channels/823584015390212118/1140105070743138444/1290490271716610119'}>
 					<div className="button">
 						DISCORD SERVER
 					</div>

@@ -90,7 +90,7 @@ function Invitational() {
 							marginTop: "50px"
 						}}
 						>
-						Tournament registration will open on September 30th, 2024 and will close on October 7th, 2024. Please visit our Scilympiad to register your school for our 2025 Invitational. 
+						Tournament registration will open on October 1st, 2024 and will close on October 7th, 2024. Please visit our Scilympiad to register your school for our 2025 Invitational. 
 						</p>
 						<div
 						style={{
