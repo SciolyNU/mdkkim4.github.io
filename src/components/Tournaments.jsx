@@ -54,7 +54,7 @@ function Tournaments() {
                     marginTop: "50px"
                   }}
                 >
-                  We are currently preparing to host our fourth annual Northwestern Invitational. Past tournament exams and answer keys, team lists, and results can be found below.
+                  We are currently preparing to host our fifth annual Northwestern Invitational. Past tournament exams and answer keys, team lists, and results can be found below.
                 </p>
               </div>
             </div>
