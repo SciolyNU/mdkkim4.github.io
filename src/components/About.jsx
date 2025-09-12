@@ -76,7 +76,7 @@ function About() {
                   Northwestern University Science Olympiad (NUSO) was founded in 2021 with a mission to better our surrounding 
 				  Science Olympiad community. Composed of Science Olympiad alums and STEM-loving folks, we strive to bring quality competition 
 				  to our nationally-recognized campus. As a dedicated team, we work year-round on initiatives to realize our goal and create 
-				  memorable Science Olympiad experiences for students.<br/><br/>We are currently preparing for our fourth annual Northwestern Invitational 
+				  memorable Science Olympiad experiences for students.<br/><br/>We are currently preparing for our fifth annual Northwestern Invitational 
 				  on February 21st, 2026.
                 </p>
               </div>
@@ -110,7 +110,7 @@ function About() {
                 </p>
 				<a href={'2024-invitational'}>
 					<div className="button">
-						2025 INVITATIONAL INFORMATION
+						2026 INVITATIONAL INFORMATION
 					</div>
 				</a>
               </div>
