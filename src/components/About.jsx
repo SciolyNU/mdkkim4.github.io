@@ -212,7 +212,7 @@ function About() {
 					fontSize: "6vmin"
                   }}
                 >
-                  2024 Tournament Directors
+                  2026 Tournament Directors
                 </h2>
               </div>
             </div>
