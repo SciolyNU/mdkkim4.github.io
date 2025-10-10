@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from 'react-dom/client';
 import "./index.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import {
   Navigation,
   Footer,
@@ -16,7 +16,7 @@ import {
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
-  <Router>
+  <HashRouter>
     <Navigation />
     <Routes>
       <Route path="/" element={<Home />} />
@@ -26,6 +26,6 @@ root.render(
       <Route path="/get-involved" element={<Volunteer />} />
       <Route path="/contact-us" element={<Contact />} />
     </Routes>
-  </Router>,
+  </HashRouter>,
   document.getElementById("root")
 );
