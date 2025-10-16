@@ -54,7 +54,7 @@ function Home() {
                     marginTop: "30px"
                   }}
                 >
-                  February 22nd, 2025
+                  February 21st, 2026
                 </p>
               </div>
             </div>
@@ -87,7 +87,7 @@ function Home() {
                     marginBottom: "0.25rem"
                   }}
                 >
-                  2025 INVITATIONAL
+                  2026 INVITATIONAL
                 </p>
                 <h2
                   style={{
@@ -101,7 +101,7 @@ function Home() {
                     marginBottom: "2.5rem"
                   }}
                 >
-                  View new announcements, updates, resources, and important tournament day information on our 2025 Invitational page!
+                  View new announcements, updates, resources, and important tournament day information on our 2026 Invitational page!
                 </p>
                 <a href={'2024-invitational'}>
                   <div className="button">
