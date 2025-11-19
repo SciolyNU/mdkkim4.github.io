@@ -4,7 +4,7 @@ import "./index.css";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import {
   Navigation,
-  Footer,
+  PageLayout,
   Home,
   About,
   Contact,
@@ -18,14 +18,16 @@ const root = createRoot(container);
 root.render(
   <HashRouter>
     <Navigation />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/2025-invitational" element={<Invitational />} />
-      <Route path="/past-tournaments" element={<Tournaments />} />
-      <Route path="/get-involved" element={<Volunteer />} />
-      <Route path="/contact-us" element={<Contact />} />
-    </Routes>
+    <PageLayout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/invitational" element={<Invitational />} />
+        <Route path="/past-tournaments" element={<Tournaments />} />
+        <Route path="/get-involved" element={<Volunteer />} />
+        <Route path="/contact-us" element={<Contact />} />
+      </Routes>
+    </PageLayout>
   </HashRouter>,
   document.getElementById("root")
 );

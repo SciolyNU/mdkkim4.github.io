@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Footer from "./Footer";
 
 function Volunteer() {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -72,14 +71,19 @@ function Volunteer() {
 					marginTop: "50px",
 				}}
 			>
-				<a href={'https://forms.gle/8Z16TaUokaEN2S2A6'}>
+				<a href={'https://docs.google.com/forms/d/e/1FAIpQLSeHmWTE1k_6WLpQM7mFSol0T_NzrRrnZh490mvSskw_jAcj5A/viewform'}>
 					<div className="button" style={{ marginRight: "50px", marginBottom: "25px" }}>
-						INTEREST FORM
+						VOLUNTEER INTEREST FORM
 					</div>
 				</a>
 				<a href={'https://discord.gg/KbFduRNAnW'}>
-					<div className="button">
+					<div className="button" style={{ marginRight: "50px", marginBottom: "25px" }}>
 						DISCORD SERVER
+					</div>
+				</a>
+				<a href={'https://catsoncampus.northwestern.edu/club_signup?group_type=&search=science+olympiad&category_tags=&order=name_asc'}>
+					<div className="button">
+						'CATS ON CAMPUS
 					</div>
 				</a>
 			</div>

@@ -43,8 +43,8 @@ function Navigation() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/2025-invitational">
-                  {windowWidth < 866 ? '2025' : '2025 Invitational'}
+                <NavLink className="nav-link" to="/invitational">
+                  {windowWidth < 866 ? '2026' : '2026 Invitational'}
                 </NavLink>
               </li>
               <li className="nav-item">

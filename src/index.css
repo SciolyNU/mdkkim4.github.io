@@ -20,6 +20,13 @@ h2 {
   color: #fff;
 }
 
+h3 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+  margin-top:1.5rem;
+}
+
 p {
   font-size: 21px;
   font-weight: 400;
@@ -201,7 +208,17 @@ hr.solid {
 
 .image-and-text {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   margin-bottom: 50px;
+}
+
+.section-title {
+  min-height: "25vh";
+	max-width: "100%";
+	display: "flex";
+	text-align: "start";
+	flex-direction: "column";
 }
