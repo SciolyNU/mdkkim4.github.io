@@ -1,3 +1,13 @@
+import logo_chem from "./logo_chem.png";
+import logo_fisher from "./logo_fisher.png";
+import logo_ibis from "./logo_ibis.svg";
+import logo_isp from "./logo_isp.webp";
+import logo_mmss from "./logo_mmss.png"
+import SponsorImage from "./SponsorImage";
+import SponsorImageSecondary from "./SponsorImageSecondary"
+import ExecTitle from "./ExecTitle";
+
+
 function Invitational() {
   	return (
 		<div className="home">
@@ -57,6 +67,43 @@ function Invitational() {
 				</div>
 				</div>
 			</div>
+			<div className="first-section">
+				<div className="section-title">
+				<div style={{ zIndex: 1 }}>
+					<h1>
+					Our Sponsors
+					</h1>
+					<hr class="solid"/>
+					<p>
+					The tournament would not be possible without support from our sponsors, shown below.
+					</p>
+					<ExecTitle title="Sponsors"/>
+						<div className="image-holder">
+							<a href="https://chemistry.northwestern.edu/"><SponsorImage image={logo_chem} nametxt="NU Chemistry Department"/></a>
+							<a href="https://www.fishersci.com/us/en/home.html"><SponsorImage image={logo_fisher} nametxt="Fisher Scientific"/></a>
+							<a href="https://mmss.northwestern.edu/"><SponsorImage image={logo_mmss} nametxt="NU MMSS"/></a>
+						</div>
+						<div className="image-holder">
+							<a href="https://ibis.northwestern.edu/"><SponsorImageSecondary image={logo_ibis} nametxt="NU IBiS"/></a>
+							<a href="https://isp.northwestern.edu/"><SponsorImageSecondary image={logo_isp} nametxt="NU ISP"/></a>
+						</div>
+					<div
+					style={{
+						display: "flex",
+						flexDirection: "row",
+						marginTop: "50px"
+					}}
+					>
+						<a href={'https://www.northwestern.edu/docs/admissions/ev_campusmap.pdf'}>
+							<div className="button" style={{ marginRight: "50px", marginBottom: "25px" }}>
+								CAMPUS MAP
+							</div>
+						</a>
+					</div>
+				</div>
+				</div>
+			</div>
+
 		</div> 
 	);
 }

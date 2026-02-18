@@ -198,7 +198,7 @@ hr.solid {
 .image-holder {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   width: 100%;
   flex-direction: column;
   @media (min-width: 866px) {
