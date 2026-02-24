@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c65e0b0.css",
-    "main.js": "/static/js/main.24d348af.js",
+    "main.css": "/static/css/main.3803c686.css",
+    "main.js": "/static/js/main.a6ba2b14.js",
     "static/media/About1.jpg": "/static/media/About1.d920c99bf4c289089450.jpg",
     "static/media/About2.jpg": "/static/media/About2.9c56a9ebd72893c734b3.jpg",
     "static/media/Home2.png": "/static/media/Home2.ec4f81d18703968f84a7.png",
@@ -32,11 +32,11 @@
     "static/media/logo_isp.webp": "/static/media/logo_isp.4bb699e89b2433222ef2.webp",
     "static/media/logo_ibis.svg": "/static/media/logo_ibis.41b389981fe8e70b82ce2bd4a14d4a49.svg",
     "index.html": "/index.html",
-    "main.5c65e0b0.css.map": "/static/css/main.5c65e0b0.css.map",
-    "main.24d348af.js.map": "/static/js/main.24d348af.js.map"
+    "main.3803c686.css.map": "/static/css/main.3803c686.css.map",
+    "main.a6ba2b14.js.map": "/static/js/main.a6ba2b14.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c65e0b0.css",
-    "static/js/main.24d348af.js"
+    "static/css/main.3803c686.css",
+    "static/js/main.a6ba2b14.js"
   ]
 }
