@@ -197,13 +197,15 @@ hr.solid {
 
 .image-holder {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: start;
   width: 100%;
-  flex-direction: column;
-  @media (min-width: 866px) {
-    flex-direction: row;
-  }
+  flex-direction: row;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 30px;
 }
 
 .image-and-text {
@@ -212,7 +214,8 @@ hr.solid {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 50px;
+  min-width: 300px;
+  max-width: 500px;
 }
 
 .section-title {

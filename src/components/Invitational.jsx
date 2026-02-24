@@ -14,12 +14,10 @@ function Invitational() {
 			<div className="first-section">
 				<div className="section-title">
 				<div style={{ zIndex: 1 }}>
-					<h1>
-					2026 Invitational
-					</h1>
+					<h1> 2026 Invitational </h1>
 					<hr class="solid"/>
 					<p>
-					Our fifth annual Northwestern Invitational will take place in-person at our Evanston campus on February 21st, 2026. Check back for more information leading up to the tournament date.
+					Our fifth annual Northwestern Invitational will took place in-person at our Evanston campus on February 21st, 2026.
 					</p>
 					<div
 					style={{
@@ -49,7 +47,7 @@ function Invitational() {
 						marginTop: "50px"
 					}}
 					>
-					To see information on the tournament's events and participating schools, visit the Scilympiad link below. There will be more information available before the tournament as well.
+					To see information on the tournament's events and participating schools, visit the Scilympiad link below.
 					</p>
 					<div
 					style={{
@@ -77,29 +75,17 @@ function Invitational() {
 					<p>
 					The tournament would not be possible without support from our sponsors, shown below.
 					</p>
-					<ExecTitle title="Sponsors"/>
+					<ExecTitle title="Primary Sponsors"/>
 						<div className="image-holder">
 							<a href="https://chemistry.northwestern.edu/"><SponsorImage image={logo_chem} nametxt="NU Chemistry Department"/></a>
 							<a href="https://www.fishersci.com/us/en/home.html"><SponsorImage image={logo_fisher} nametxt="Fisher Scientific"/></a>
 							<a href="https://mmss.northwestern.edu/"><SponsorImage image={logo_mmss} nametxt="NU MMSS"/></a>
 						</div>
+						<ExecTitle title="Secondary Sponsors"/>
 						<div className="image-holder">
 							<a href="https://ibis.northwestern.edu/"><SponsorImageSecondary image={logo_ibis} nametxt="NU IBiS"/></a>
 							<a href="https://isp.northwestern.edu/"><SponsorImageSecondary image={logo_isp} nametxt="NU ISP"/></a>
 						</div>
-					<div
-					style={{
-						display: "flex",
-						flexDirection: "row",
-						marginTop: "50px"
-					}}
-					>
-						<a href={'https://www.northwestern.edu/docs/admissions/ev_campusmap.pdf'}>
-							<div className="button" style={{ marginRight: "50px", marginBottom: "25px" }}>
-								CAMPUS MAP
-							</div>
-						</a>
-					</div>
 				</div>
 				</div>
 			</div>

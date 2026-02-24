@@ -15,6 +15,7 @@ function ExecImage(props) {
 			}}
 		>{props.nametxt}</h3>
 		<p style={{ margin: 0 }}>{props.year}</p>
+		<br></br>
 	</div>
 	);
 }
