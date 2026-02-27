@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3803c686.css",
-    "main.js": "/static/js/main.4ff133d3.js",
+    "main.js": "/static/js/main.94d6e792.js",
     "static/media/About1.jpg": "/static/media/About1.d920c99bf4c289089450.jpg",
     "static/media/About2.jpg": "/static/media/About2.9c56a9ebd72893c734b3.jpg",
     "static/media/Home2.png": "/static/media/Home2.ec4f81d18703968f84a7.png",
@@ -33,10 +33,10 @@
     "static/media/logo_ibis.svg": "/static/media/logo_ibis.41b389981fe8e70b82ce2bd4a14d4a49.svg",
     "index.html": "/index.html",
     "main.3803c686.css.map": "/static/css/main.3803c686.css.map",
-    "main.4ff133d3.js.map": "/static/js/main.4ff133d3.js.map"
+    "main.94d6e792.js.map": "/static/js/main.94d6e792.js.map"
   },
   "entrypoints": [
     "static/css/main.3803c686.css",
-    "static/js/main.4ff133d3.js"
+    "static/js/main.94d6e792.js"
   ]
 }
