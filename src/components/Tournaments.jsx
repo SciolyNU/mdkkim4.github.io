@@ -58,11 +58,11 @@ function Tournaments() {
 							SCORESHEET
 						</div>
 					</a>
-					{/* <a href={'https://drive.google.com/drive/folders/1zBI-xbTLdA8KquwZg0PdK4t7vI1lAiL-?usp=sharing'}>
+					<a href={'https://drive.google.com/drive/folders/1J8hqJFwR_glKcheiFRXEp4rMoRRTmFcw?usp=sharing'}>
 						<div className="button">
-							2023 TESTS
+							2026 TESTS
 						</div>
-					</a> */}
+					</a>
 				</div>
 			</div>
 		</div>
