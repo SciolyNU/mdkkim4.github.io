@@ -17,7 +17,7 @@ function Invitational() {
 					<h1> 2026 Invitational </h1>
 					<hr class="solid"/>
 					<p>
-					Our fifth annual Northwestern Invitational will took place in-person at our Evanston campus on February 21st, 2026.
+					Our fifth annual Northwestern Invitational took place in-person at our Evanston campus on February 21st, 2026.
 					</p>
 					<div
 					style={{
