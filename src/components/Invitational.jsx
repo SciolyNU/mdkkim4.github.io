@@ -14,10 +14,10 @@ function Invitational() {
 			<div className="first-section">
 				<div className="section-title">
 				<div style={{ zIndex: 1 }}>
-					<h1> 2026 Invitational </h1>
+					<h1> 2027 Invitational </h1>
 					<hr class="solid"/>
 					<p>
-					Our fifth annual Northwestern Invitational took place in-person at our Evanston campus on February 21st, 2026.
+					Our website and Scilympiad are currently being updated. Stay tuned!
 					</p>
 					<div
 					style={{
@@ -47,7 +47,8 @@ function Invitational() {
 						marginTop: "50px"
 					}}
 					>
-					To see information on the tournament's events and participating schools, visit the Scilympiad link below.
+					We are excited to announce that the 2027 NUSO Division C Invitational will be held on Saturday, February 20th, 2027! 
+					Registration for the invitational will open on Friday, October 2nd, 2026, at 2:00 PM CST through our Scilympiad page.
 					</p>
 					<div
 					style={{
