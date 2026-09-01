@@ -47,8 +47,7 @@ function Invitational() {
 						marginTop: "50px"
 					}}
 					>
-					We are excited to announce that the 2027 NUSO Division C Invitational will be held on Saturday, February 20th, 2027! 
-					Registration for the invitational will open on Friday, October 2nd, 2026, at 2:00 PM CST through our Scilympiad page.
+					We are excited to announce that the 2027 NUSO Division C Invitational will be held on Saturday, February 20th, 2027! Registration for the invitational will open on Friday, October 2nd, 2026, at 2:00 PM CST through our Scilympiad page.
 					</p>
 					<div
 					style={{
